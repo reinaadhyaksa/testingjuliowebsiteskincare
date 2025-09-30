@@ -6,10 +6,8 @@ const Products = () => {
             size: "100 ml",
             description: "Pembersih wajah dengan charcoal aktif yang membantu mengangkat kotoran dan minyak berlebih, sekaligus menjaga kulit tetap segar. Cocok digunakan setiap hari untuk pria dengan aktivitas padat.",
             benefits: ["Membersihkan", "Kontrol Minyak", "Rasa Segar"],
-            price: "Rp 85.000",
-            originalPrice: "Rp 120.000",
-            discount: "30%",
-            image: "https://res.cloudinary.com/du4wegspv/image/upload/f_auto,q_auto/v1758929497/mosturizer_ua1le7.png",
+            price: "Rp 35.000",
+            image: "https://res.cloudinary.com/du4wegspv/image/upload/f_auto,q_auto/v1758929500/facialwash_xtbzhu.png",
             badge: "BEST SELLER",
             animation: "fade-right"
         },
@@ -19,10 +17,8 @@ const Products = () => {
             size: "100 ml",
             description: "Moisturizer ringan dengan kandungan DNA Salmon untuk membantu melembapkan sekaligus membuat kulit tampak lebih cerah. Teksturnya cepat meresap tanpa rasa lengket.",
             benefits: ["Mencerahkan", "Melembapkan", "Ringan"],
-            price: "Rp 120.000",
-            originalPrice: "Rp 150.000",
-            discount: "20%",
-            image: "https://res.cloudinary.com/du4wegspv/image/upload/f_auto,q_auto/v1758929500/facialwash_xtbzhu.png",
+            price: "Rp 95.000",
+            image: "https://res.cloudinary.com/du4wegspv/image/upload/f_auto,q_auto/v1758929497/mosturizer_ua1le7.png",
             badge: "NEW",
             animation: "fade-left"
         }
@@ -67,12 +63,6 @@ const Products = () => {
                                 </div>
                             )}
 
-                            <div className="absolute top-3 right-3 z-10">
-                                <span className="bg-yellow-500 text-black px-2 py-1 rounded-full text-xs font-bold">
-                                    {product.discount} OFF
-                                </span>
-                            </div>
-
                             <div className="relative h-64 md:h-80 bg-gray-800 overflow-hidden">
                                 <img
                                     src={product.image}
@@ -108,7 +98,6 @@ const Products = () => {
                                     <div>
                                         <div className="flex items-center space-x-2">
                                             <span className="text-yellow-500 font-bold text-lg md:text-xl">{product.price}</span>
-                                            <span className="text-gray-500 line-through text-xs">{product.originalPrice}</span>
                                         </div>
                                         <p className="text-green-400 text-xs">Stok tersedia</p>
                                     </div>
